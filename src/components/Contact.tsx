@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Clock, Facebook, Instagram } from 'lucide-react';
+import { MapPin, Clock, Facebook, Instagram, Phone } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -27,7 +27,7 @@ export default function Contact() {
     }
 
     // Construct WhatsApp Message
-    const phoneNumber = "529931234567"; // Replace with actual number
+    const phoneNumber = "529931386506";
     const text = `Hola Andros MedLab, me gustaría agendar una cita.\n\n*Nombre:* ${formData.name}\n*Teléfono:* ${formData.phone}\n*Fecha deseada:* ${formData.date || 'Por definir'}\n*Hora deseada:* ${formData.time || 'Por definir'}\n*Servicio de interés:* ${formData.service}`;
     const encodedText = encodeURIComponent(text);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
@@ -56,6 +56,14 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-lg">Ubicación</h4>
                   <p className="text-on-primary/80 mt-1">Calle Ejido, C. Miguel Hidalgo y Costilla 1552, 86150 Villahermosa, Tab.</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <Phone className="text-secondary shrink-0" size={24} />
+                <div>
+                  <h4 className="font-semibold text-lg">Teléfono</h4>
+                  <p className="text-on-primary/80 mt-1">+52 993 138 6506</p>
                 </div>
               </div>
               
