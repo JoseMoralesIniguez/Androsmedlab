@@ -1,12 +1,20 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-export default function ScrollToTop() {
-  const { pathname } = useLocation();
+# Run and deploy your AI Studio app
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+This contains everything you need to run your app locally.
 
-  return null;
-}
+View your app in AI Studio: https://ai.studio/apps/f6df0b27-b6df-4bd7-965c-9959b5203522
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
