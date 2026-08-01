@@ -11,10 +11,12 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import BlogPage from './pages/BlogPage';
 import ScrollToTop from './components/ScrollToTop';
+import ImageCarousel from './components/ImageCarousel';
 
 function Home() {
   return (
     <>
+      <ImageCarousel />
       <Hero />
       <About />
       <Services />

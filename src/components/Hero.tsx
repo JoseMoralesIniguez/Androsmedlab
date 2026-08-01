@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[80vh] flex items-center justify-center bg-surface-gray overflow-hidden pt-28">
+    <section className="relative w-full min-h-[80vh] flex items-center justify-center bg-surface-gray overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2080&auto=format&fit=crop"
