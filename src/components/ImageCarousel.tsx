@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
-const images = [
-  "https://storage.googleapis.com/aistudio-build-user-assets/f6df0b27-b6df-4bd7-965c-9959b5203522/3vrc389u6c.jpeg",
-  "https://storage.googleapis.com/aistudio-build-user-assets/f6df0b27-b6df-4bd7-965c-9959b5203522/2m4c781q98n.jpeg",
-  "https://storage.googleapis.com/aistudio-build-user-assets/f6df0b27-b6df-4bd7-965c-9959b5203522/aigumz64q9g.jpeg",
-  "https://storage.googleapis.com/aistudio-build-user-assets/f6df0b27-b6df-4bd7-965c-9959b5203522/oif7tnh4f2.jpeg",
-  "https://storage.googleapis.com/aistudio-build-user-assets/f6df0b27-b6df-4bd7-965c-9959b5203522/58p7z40x48r.jpeg",
-  "https://storage.googleapis.com/aistudio-build-user-assets/f6df0b27-b6df-4bd7-965c-9959b5203522/68v4h168g0g.jpeg"
-];
-
 export default function ImageCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Usamos el BASE_URL de Vite para asegurar que las rutas funcionen en GitHub Pages
+  const baseUrl = import.meta.env.BASE_URL;
+  const images = [
+    `${baseUrl}slide1.jpg`,
+    `${baseUrl}slide2.jpg`,
+    `${baseUrl}slide3.jpg`,
+    `${baseUrl}slide4.jpg`,
+    `${baseUrl}slide5.jpg`,
+    `${baseUrl}slide6.jpg`
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
