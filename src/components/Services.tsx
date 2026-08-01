@@ -22,7 +22,7 @@ export default function Services() {
           {/* Andrology */}
           <div className="bg-lab-white rounded-2xl border border-outline-variant/50 overflow-hidden flex flex-col group hover:-translate-y-1 transition-transform duration-300 shadow-sm">
             <div className="h-48 relative overflow-hidden flex items-end p-6">
-              <img src="/andrologia.jpg" alt="Espermatozoides y Andrología" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src={`${import.meta.env.BASE_URL}andrologia.jpg`} alt="Espermatozoides y Andrología" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="relative z-10 w-14 h-14 bg-lab-white rounded-xl flex items-center justify-center shadow-sm">
                 <FlaskConical className="text-primary" size={28} />
